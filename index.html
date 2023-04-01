@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <form>
+            <label for="nome">Nome:</label>
+            <input id="nome" name="nome" placeholder="Digite seu nome" required type="text">
+
+            <label for="email">Email:</label>
+            <input id="email" name="email" placeholder="Digite seu email" required type="email">
+
+            <label for="senha">Senha:</label>
+            <input id="senha" name="senha" placeholder="Digite sua senha" required type="password">
+
+            <label for="data">Data de Nascimento:</label>
+            <input id="data" name="data" required type="date">
+
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <option value="O">Outro</option>
+            </select>
+
+            <label for="cep">CEP:</label>
+            <input id="cep" name="cep" placeholder="Digite seu CEP" required type="text" maxlength="9" oninput="formatarCep(this)">
+
+            <label for="logradouro">Logradouro:</label>
+            <input id="logradouro" name="logradouro" placeholder="Digite seu logradouro" required type="text">
+
+            <label for="numero">Número:</label>
+            <input id="numero" name="numero" placeholder="Digite seu número" required type="text" maxlength="3">
+
+            <label for="bairro">Bairro:</label>
+            <input id="bairro" name="bairro" placeholder="Digite seu bairro" required type="text">
+
+            <label for="cidade">Cidade:</label>
+            <input id="cidade" name="cidade" placeholder="Digite sua cidade" required type="text">
+
+            <label for="estado">Estado:</label>
+            <input id="estado" name="estado" placeholder="Digite seu estado" required type="text">
+
+            <button type="submit" id="enviar">Enviar</button>
+            <button type="reset" id="limpar">Limpar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;Armando P. Sousa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
